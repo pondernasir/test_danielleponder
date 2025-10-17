@@ -39,23 +39,6 @@ nav .left .title{
     color:rgba(128, 128, 128, 0.608);
     pointer-events: none;
 }
-nav .right button{
-    color: var(--main_color);
-    padding: 10px 14px;
-    border-radius: 25px;
-    border:solid black 1px;
-    background-color: transparent;
-    font-family: main_font;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: .25s ease-in-out;
-}
-nav .right button:hover{
-    background-color: var(--main_color);
-    color:white;
-}
 .container{
     width: 90%;
     margin: 75px auto auto auto;
@@ -86,6 +69,27 @@ nav .right button:hover{
     margin: -50px auto auto auto;
     color: var(--main_color);
     text-align: center;
+}
+.contact{
+    text-align: center;
+    margin: 25px auto auto auto;
+}
+.contact button{
+    color: var(--main_color);
+    padding: 10px 14px;
+    border-radius: 25px;
+    border:solid black 1px;
+    background-color: transparent;
+    font-family: main_font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+.contact button:hover{
+    background-color: var(--main_color);
+    color:white;
 }
 .socials{
     display: flex;
