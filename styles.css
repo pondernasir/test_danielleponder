@@ -1,0 +1,115 @@
+:root{
+    --main_color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--main_color)
+}
+@font-face {
+    font-family: main_font;
+    src: url(HammersmithOne-Regular.ttf);
+}
+@font-face {
+    font-family: signature;
+    src: url(Mistake\ Note.otf);
+}
+body{
+    background-color: white;
+}
+nav{
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-family: main_font;
+}
+nav .left{
+    display: flex;
+    flex-direction: column;
+}
+nav .left .name{
+    text-transform: uppercase;
+    font-size: clamp(25px,2.5vw,45px);
+    pointer-events: none;
+}
+nav .left .title{
+    margin:-8px auto auto 0px;
+    color:rgba(128, 128, 128, 0.608);
+    pointer-events: none;
+}
+nav .right button{
+    color: var(--main_color);
+    padding: 10px 14px;
+    border-radius: 25px;
+    border:solid black 1px;
+    background-color: transparent;
+    font-family: main_font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .25s ease-in-out;
+}
+nav .right button:hover{
+    background-color: var(--main_color);
+    color:white;
+}
+.container{
+    width: 90%;
+    margin: 75px auto auto auto;
+    text-align: center;
+}
+.container img{
+    width:75%;
+    pointer-events: none;
+    border-radius: 2.5px;
+}
+.container .signature{
+    width: 75%;
+    /*margin: 0px auto auto 17%;*/
+    margin: 11% auto 12.5% auto;
+    font-family: signature;
+    font-size:clamp(15px,2.5vw,45px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    z-index: 5;
+    /*line-height: 34px;*/
+    text-align: center;
+}
+.container .text{
+    font-family: main_font;
+    font-size: clamp(9px,2.5vw,20px);
+    line-height: 200%;
+    width:80%;
+    margin: -50px auto auto auto;
+    color: var(--main_color);
+    text-align: center;
+}
+.socials{
+    display: flex;
+    margin: 50px auto 50px auto;
+    justify-content: space-between;
+    width: fit-content;
+}
+.socials img{
+    width: 17.5px;
+}
+.socials a{
+    margin: auto 5px;
+    transition: .25s ease-in-out;
+}
+.socials a:hover{
+    opacity: 0.5;
+}
+footer{
+    text-align: center;
+    margin: 10px auto;
+    font-family: main_font;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:rgba(128, 128, 128, 0.27);
+    letter-spacing: 1px;
+    pointer-events: none;
+}
